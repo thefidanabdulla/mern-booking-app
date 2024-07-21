@@ -1,4 +1,3 @@
-import Hotel from "../models/hotel";
 
 export type HotelType = {
   _id: string;
