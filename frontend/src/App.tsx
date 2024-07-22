@@ -14,6 +14,7 @@ import EditHotel from "./pages/EditHotel.tsx";
 import Search from "./pages/Search.tsx";
 import Detail from "./pages/Detail.tsx";
 import Booking from "./pages/Booking.tsx";
+import MyBookings from "./pages/MyBookings.tsx";
 
 function App() {
   const { isLoggedIn } = useAppContext();
@@ -31,6 +32,7 @@ function App() {
             <Route path="/add-hotel" element={<Layout><AddHotel /></Layout>} />
             <Route path="/edit-hotel/:hotelId" element={<Layout><EditHotel /></Layout>} />
             <Route path="/my-hotels" element={<Layout><MyHotels  /></Layout>} />
+            <Route path="/my-bookings" element={<Layout><MyBookings  /></Layout>} />
           </>
         )}
         <Route path="*" element={<Navigate to="/" />} />
