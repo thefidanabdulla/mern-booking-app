@@ -15,13 +15,14 @@ import Search from "./pages/Search.tsx";
 import Detail from "./pages/Detail.tsx";
 import Booking from "./pages/Booking.tsx";
 import MyBookings from "./pages/MyBookings.tsx";
+import HomePage from "./pages/HomePage.tsx";
 
 function App() {
   const { isLoggedIn } = useAppContext();
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Layout><p>Home PAGE</p></Layout>} />
+        <Route path="/" element={<Layout><HomePage /></Layout>} />
         <Route path="/search" element={<Layout><Search/></Layout>} />
         <Route path="/detail/:hotelId" element={<Layout><Detail/></Layout>} />
         <Route path="/register" element={<Layout><Register /></Layout>} />
